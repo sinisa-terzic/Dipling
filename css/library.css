@@ -1,7 +1,8 @@
 .library-content {
     background-color: #70839e;
     min-height: 100vh;
-    /* display: grid; */
+    display: grid;
+
     grid-template-rows: 10% 90%;
     justify-content: center;
     overflow: hidden;
@@ -11,6 +12,11 @@
     bottom: 0;
     right: 0;
     z-index: 100;
+    transition: all 0.4s ease;
+}
+
+.translateX-100 {
+    transform: translateX(-100%);
 }
 
 .library-header {
@@ -23,11 +29,17 @@
     justify-content: space-between;
 }
 
-.library-header p {
+.library-pdf {
+    color: #fff;
+}
+
+.library-header p,
+.library-pdf p {
     padding: 20px 40px;
 }
 
-.library-header .library-header-close {
+.library-header .library-header-close,
+.library-pdf .library-header-close {
     font-size: 1.8rem;
     display: flex;
     gap: 10px;
@@ -42,6 +54,17 @@
 
 .library-header .library-header-title {
     font-size: 2.2rem;
+}
+
+.library-pdf {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    z-index: 111;
+    cursor: pointer;
 }
 
 .doc-accordion {
@@ -75,7 +98,7 @@
 }
 
 .doc1.doc:hover {
-    background-image: url(../img/library/1.jpg);
+    background-image: url(../img/library/3.jpg);
 }
 
 /* 2 */
@@ -284,6 +307,7 @@
     transform-origin: 0 0;
     transition: all 0.2s;
     opacity: 0;
+    font-size: 1.6rem;
 }
 
 .doc .title-pdf {
@@ -302,6 +326,7 @@
     transform-origin: 0 0;
     transition: all 0.3s;
     opacity: 1;
+    font-size: 1.8rem;
 }
 
 .doc-accordion:hover .doc {
@@ -336,4 +361,5 @@
     right: 0;
     margin: auto;
     text-align: center;
+    font-size: 150%;
 }

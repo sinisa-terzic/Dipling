@@ -82,7 +82,7 @@
     position: fixed;
     transform: translateY(100%);
     left: 0;
-    bottom: calc(50vh + 70px);
+    bottom: calc(50vh + 50px);
     z-index: 3;
     padding: 0.8rem;
     background-color: #cd2026;
