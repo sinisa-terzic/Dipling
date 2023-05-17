@@ -8,7 +8,7 @@ library_Close.addEventListener('click', () => {
 });
 
 const library_Open = document.querySelector('.open-library')
-library_Open.addEventListener('mouseenter', () => {
+library_Open.addEventListener('click', () => {
     library.classList.remove("translateX-100");
 });
 
@@ -22,7 +22,7 @@ library_Pdf_Close1.addEventListener('click', () => {
 });
 
 const library_Pdf_Open1 = document.querySelector('.link-pdf1')
-library_Pdf_Open1.addEventListener('mouseenter', () => {
+library_Pdf_Open1.addEventListener('click', () => {
     library_Pdf1.classList.remove("none");
 });
 
