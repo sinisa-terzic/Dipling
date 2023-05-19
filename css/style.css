@@ -122,8 +122,8 @@
 
 /* hero */
 #hero {
-    /* background: url(../img/hero/hero.png) center center / cover fixed;
-     padding: 100px 0;
+    /* background: url(../bc-hero.jpg) center center / cover fixed;
+    padding: 100px 0;
     text-align: center;*/
     height: calc(100vh - 22px);
     padding-top: 150px;
