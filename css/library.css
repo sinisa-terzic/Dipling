@@ -40,7 +40,7 @@
 
 .library-header .library-header-close,
 .library-pdf .library-header-close {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -48,12 +48,12 @@
 }
 
 .library-header .library-header-heading {
-    font-size: 2.4rem;
+    font-size: 2.4em;
     font-weight: 700;
 }
 
 .library-header .library-header-title {
-    font-size: 2.2rem;
+    font-size: 2.2em;
 }
 
 .library-pdf {
@@ -307,7 +307,7 @@
     transform-origin: 0 0;
     transition: all 0.2s;
     opacity: 0;
-    font-size: 1.6rem;
+    font-size: 1.6em;
 }
 
 .doc .title-pdf {
@@ -326,7 +326,7 @@
     transform-origin: 0 0;
     transition: all 0.3s;
     opacity: 1;
-    font-size: 1.6rem;
+    font-size: 1.6em;
 }
 
 .doc-accordion:hover .doc {

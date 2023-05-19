@@ -43,8 +43,9 @@
 .slogan-h1 {
     padding-left: 20px;
     color: #fff;
-    letter-spacing: -0.2px;
-    font-size: 2.4em;
+    letter-spacing: 0.5px;
+    font-size: 2.2em;
+    font-weight: 600;
 }
 
 .nav a {
