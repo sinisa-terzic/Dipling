@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5;
+    z-index: 10;
     padding: 0 12px;
 }
 
@@ -27,7 +27,6 @@
     top: 0;
     left: 12px;
     right: 12px;
-    z-index: 5;
     /* background-color: #fff;
     color: #112e51; 
     transition: 0.5 all ease;*/
