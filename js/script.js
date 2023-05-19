@@ -13,7 +13,7 @@ library_Open.addEventListener('click', () => {
 });
 
 // oprn dialog box library
-const library_Pdf1 = document.querySelector('.library-pdf1');
+/* const library_Pdf1 = document.querySelector('.library-pdf1');
 
 const library_Pdf_Close1 = document.querySelector('.library-pdf1')
 library_Pdf_Close1.addEventListener('click', () => {
@@ -38,5 +38,25 @@ library_Pdf_Close2.addEventListener('click', () => {
 const library_Pdf_Open2 = document.querySelector('.link-pdf2')
 library_Pdf_Open2.addEventListener('click', () => {
     library_Pdf2.classList.remove("none");
-});
+}); */
+
+
+///////////////////////////////////////////////////////////
+// Sticky navigation
+window.onscroll = function () { myFunction() };
+
+// Get the navbar
+var navbar = document.getElementById("headerBottom");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position. može se staviti i window.pageYOffset >= 1000 - na koliko piksela će se pojaviti
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}// JavaScript Document
 
