@@ -79,10 +79,12 @@
 }
 
 .nav a:hover {
-    color: #112e51;
+    /* color: #112e51; */
+    color: #121212;
     border-bottom: 4px solid #f58320;
-    background-color: #dce4ef;
+    background-color: #fff;
     z-index: 1;
+    font-weight: 700;
 }
 
 
