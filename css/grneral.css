@@ -113,8 +113,26 @@ img {
 }
 
 /*  ===  padding  ===  */
+.pr-16 {
+    padding-right: 1.6em;
+}
+
+.pl-16 {
+    padding-left: 1.6em;
+}
+
 .p-60 {
     padding: 6em;
+}
+
+.pb-60 {
+    padding-bottom: 6em;
+}
+
+.plbr-60 {
+    padding-left: 6em;
+    padding-bottom: 6em;
+    padding-right: 6em;
 }
 
 .pt-90 {
@@ -128,19 +146,4 @@ img {
 .ptb-90 {
     padding-top: 9em;
     padding-bottom: 9em;
-}
-
-.plbr-60 {
-    padding-left: 6em;
-    padding-bottom: 6em;
-    padding-right: 6em;
-
-}
-
-.pr-16 {
-    padding-right: 1.6em;
-}
-
-.pl-16 {
-    padding-left: 1.6em;
 }
