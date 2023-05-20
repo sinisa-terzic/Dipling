@@ -236,6 +236,107 @@
     font-size: 20px;
 }
 
+/* tim */
+.section-tim-img {
+    gap: 7.2em;
+    color: #fff;
+}
+
+.img-tim {
+    padding: 0 0 10em;
+    overflow: hidden;
+}
+
+.team-bg-color-1 {
+    background: linear-gradient(90deg, #423f9c 31%, #862359 69%);
+}
+
+.team-bg-color-2 {
+    background: linear-gradient(90deg, #00e4ce 31%, #00abc9 69%);
+}
+
+.team-content {
+    overflow: hidden;
+    padding: 2em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(55%);
+    color: var(--white);
+    text-align: center;
+    transition: all .3s ease .1s;
+}
+
+.team-content h3 {
+    font-weight: normal;
+    font-size: 3em;
+    margin: 0 0 1rem 0;
+}
+
+.team-content p {
+    font-size: 12px;
+    margin-bottom: 4em;
+}
+
+.progress {
+    display: flex;
+    background-color: #e9ecef;
+    position: relative;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.progress-bars .progress+.progress {
+    margin-top: 40px;
+}
+
+.progress-bar {
+    width: 75%;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+
+.progress .progress-bar {
+    width: 75%;
+    float: none;
+    position: absolute;
+    height: 100%;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: width 1s ease-in-out .3s;
+    -o-transition: width 1s ease-in-out .3s;
+    transition: width 1s ease-in-out .3s;
+    background: -webkit-linear-gradient(90deg, #f6663f 31%, #ed145b 69%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(31%, #f6663f), color-stop(69%, #ed145b));
+    background: -webkit-linear-gradient(left, #f6663f 31%, #ed145b 69%);
+    background: -o-linear-gradient(left, #f6663f 31%, #ed145b 69%);
+    background: linear-gradient(90deg, #f6663f 31%, #ed145b 69%);
+}
+
+.progress p {
+    margin-bottom: 10px;
+    position: relative;
+    top: -24px;
+    left: 0;
+    display: inline-block;
+}
+
+.img-tim:hover .team-content {
+    transform: translateY(0%);
+}
+
+
 
 /* footer */
 .footer {
