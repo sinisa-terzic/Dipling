@@ -181,6 +181,12 @@
     border-radius: 20px; */
 }
 
+/* text */
+.section-p {
+    color: #515151;
+    line-height: 27px;
+    font-size: 1.6rem;
+}
 
 /* about */
 .section-about,
@@ -191,7 +197,7 @@
 .section-about-txt {
     padding: 40px 0 0 62px;
     text-align: center;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 
