@@ -17,12 +17,8 @@
     background: #fff;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body {
-
+    font-size: 62.5%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     /* font-size: calc(16px + (105 - 16) * ((100vw - 320px) / (1600 - 320))); */
