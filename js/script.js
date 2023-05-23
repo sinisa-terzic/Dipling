@@ -60,6 +60,16 @@ function myFunction() {
     }
 }// JavaScript Document
 
+///////////////////////////////////////////////////////////
+// toggle hamburger menu button
+const navToggle = document.querySelector(".toggle"),
+    navSpanMiddle = document.querySelector(".toggle .middle")
+
+navToggle.addEventListener("click", () => {
+    navToggle.classList.toggle("active");
+    navSpanMiddle.classList.toggle("hide");
+    // navNavigationBar.classList.toggle("show");
+});
 
 ///////////////////////////////////////////////////////////
 // remove loader

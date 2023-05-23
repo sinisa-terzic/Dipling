@@ -61,6 +61,51 @@
     font-weight: 600;
 }
 
+.toggle {
+    display: none;
+    top: 26px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 21;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: relative;
+    transition: .3s;
+}
+
+.toggle span:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+
+.toggle.active {
+    left: 36%;
+}
+
+.toggle .hide {
+    transition: 0s;
+    visibility: hidden;
+}
+
+.toggle.active .last {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.toggle.active .first {
+    top: 16px;
+    transform: rotate(-45deg);
+}
+
 .nav a {
     display: block;
     padding: 40px 20px 36px;
