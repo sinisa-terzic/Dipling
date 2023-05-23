@@ -422,14 +422,19 @@
     margin-top: -50px;
 }
 
+.scroll-top {
+    position: relative;
+    top: -45px;
+    left: 0;
+}
+
 .copyright .arrow-up {
     cursor: pointer;
     display: inline-block;
-    position: relative;
+
     width: 40px;
     height: 30px;
-    top: -45px;
-    left: 0;
+
     color: #fff;
     line-height: 1.9;
     font-size: 1.5em;
