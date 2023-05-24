@@ -299,8 +299,11 @@
 /* services 2 */
 .services2-bg {
     height: 350px;
-    background: url(../img/services/2.jpg) fixed center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/services/02+.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .service-txt {
