@@ -1,0 +1,30 @@
+:root {
+    /* icon */
+    --icon-color: #0162ff;
+
+    /* background color */
+    --body-bg-color: #f1f1f1;
+    --theme-bg-color: #fff;
+    /* --delete-bg-color: transparent; */
+
+    /* color */
+    --high-color: #003b58;
+    --medium-color: #121212;
+    --low-color: #121212;
+    --blue-color: #121212;
+}
+
+.dark-mode {
+    /* icon */
+    --icon-color: #9c7bb8;
+
+    /* background color */
+    --body-bg-color: #13131a;
+    --theme-bg-color: #1c1c24;
+    /* --delete-bg-color: #292932; */
+
+    /* color */
+    --high-color: rgba(255, 255, 255, 0.8);
+    --medium-color: rgba(255, 255, 255, 0.6);
+    --low-color: rgba(255, 255, 255, 0.4);
+}

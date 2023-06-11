@@ -17,15 +17,11 @@
   display: grid;
 }
 
-/* .grid:last-child {
-   margin-bottom: 0;
- } */
-
-/* .grid:not(:last-child) {
-  margin-bottom: 9.6em;
-} */
-
 .col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-img-2 {
   grid-template-columns: repeat(2, 1fr);
 }
 

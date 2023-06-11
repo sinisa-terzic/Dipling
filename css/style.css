@@ -1,12 +1,23 @@
+/*  ===  HEADER  ===
+******************************************* */
 .header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 15;
     padding: 0 12px;
 }
 
+.svg-header {
+    transform: rotate(0deg);
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    fill: #fff;
+}
+
+/* headerTop */
 #headerTop {
     background-color: #fff;
     color: #112e51;
@@ -16,29 +27,10 @@
     /* border-bottom: 4px solid #ececec; */
 }
 
-#headerBottom {
-    background-color: #112e51;
-    /* transition: 0.5 all ease; */
-    padding: 0 50px 0 15px;
-}
-
-#headerBottom.sticky {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 12px;
-    right: 12px;
-    /* background-color: #fff;
-    color: #112e51; 
-    transition: 0.5 all ease;*/
-}
-
-.svg-top {
-    transform: rotate(0deg);
-    position: relative;
-    top: -10px;
-    z-index: -1;
-    fill: #fff;
+#headerTop a {
+    color: #112e51;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 .headerTopLeft {
@@ -53,6 +45,13 @@
     color: #112e51
 }
 
+/* headerBottom */
+#headerBottom {
+    background-color: #112e51;
+    transition: 0.2s all ease;
+    padding: 0 50px 0 15px;
+}
+
 .slogan-h1 {
     padding-left: 20px;
     color: #fff;
@@ -61,49 +60,18 @@
     font-weight: 600;
 }
 
-.toggle {
+.logo-sm {
+    width: 250px;
+}
+
+.hamburger {
     display: none;
-    top: 26px;
-    right: 20px;
-    background-color: transparent;
+    z-index: 100;
+    padding: 20px;
     border: none;
-    padding: 0;
-    z-index: 21;
+    background: transparent;
+    color: #fff;
     cursor: pointer;
-    /* position: absolute; */
-}
-
-.toggle span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    border-radius: 40px;
-    background-color: #fff;
-    position: relative;
-    transition: .3s;
-}
-
-.toggle span:not(:last-of-type) {
-    margin-bottom: 6px;
-}
-
-.toggle.active {
-    left: 36%;
-}
-
-.toggle .hide {
-    transition: 0s;
-    visibility: hidden;
-}
-
-.toggle.active .last {
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.toggle.active .first {
-    top: 16px;
-    transform: rotate(-45deg);
 }
 
 .nav a {
@@ -114,6 +82,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.2s all ease;
+
 }
 
 .nav a:link,
@@ -125,34 +94,22 @@
 }
 
 .nav a:hover {
-    /* color: #112e51; */
     color: #121212;
     /* border-bottom: 4px solid #f58320; */
     background-color: #fff;
     z-index: 1;
-    /* font-weight: 700; */
 }
 
-.nav a.third:after {
+.nav a.third::after {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    transition: 0.2s all ease;
 }
 
-/* .nav a.after:after {
-    height: 4px;
-    height: 0.35rem; 
-    width: 0;
-    background: #f58320;
-}
-
-.nav a.after:after {
-    bottom: -0.25em;
-} */
-
-.nav a.after:after {
+.nav a.after::after {
     content: "";
-    transition: 0.4s all ease;
+    transition: 0.2s all ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
@@ -162,48 +119,43 @@
     background: #f58320;
 }
 
-.nav a.after:hover:after {
+.nav a.after:hover::after {
     width: 100%;
 }
 
-
-
-/* library */
-.library-btt {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+#headerBottom.sticky {
+    z-index: 1;
     position: fixed;
-    transform: translateY(100%);
+    top: 0;
     left: 12px;
-    bottom: calc(50vh + 50px);
-    z-index: 3;
-    padding: 0.6em;
-    background-color: #cd2026;
-    transition: all .01s ease-in;
-    font-size: 1.4em;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    right: 12px;
+    background-color: #fff;
+    color: #112e51;
+    transition: 0.3s all ease;
+    box-shadow: 0 2em 4em rgba(0, 0, 0, 0.03);
 }
 
-.library-btt img {
-    width: 50px;
+#headerBottom.sticky .slogan-h1 {
+    color: #112e51;
+    font-weight: 700;
+    transition: 0.2s all ease;
 }
 
-.library-btt svg {
-    width: 50px;
-    fill: #fff;
-    left: 10px;
+#headerBottom.sticky .nav a:link,
+#headerBottom.sticky .nav a:visited {
+    border-bottom: 4px solid #fff;
+    color: #112e51;
+}
+
+#headerBottom.sticky .hamburger {
+    color: #121212;
 }
 
 
+/*  ===  HERO  ===
+******************************************* */
 /* hero */
 #hero {
-    /* background: url(../bc-hero.jpg) center center / cover fixed;
-    padding: 100px 0;
-    text-align: center;*/
     height: calc(100vh - 22px);
     padding-top: 150px;
     background-color: #dce4ef;
@@ -260,53 +212,35 @@
     border-radius: 20px; */
 }
 
+/*  ===  ABOUT  ===
+******************************************* */
+/*.section-about {
+     background: url(../img/about/fggfg.png) no-repeat center;
+} */
 
-/* about */
 .section-about,
 .section-about-img {
     gap: 2em;
 }
 
-.section-about-txt {
-    padding: 40px 0 0 62px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.section-contact-txt {
-    padding: 40px 52px 0 0;
-    text-align: center;
-    font-size: 20px;
-}
-
-
-/* services */
-.services-bg {
+/*  ===  FIXED IMAGE & TEXT  ===
+******************************************* */
+.fixed-image-bg-1 {
     height: 350px;
-    background: url(../img/services/1.jpg) fixed center;
+    background: url(../img/fixed-image/1.jpg) fixed center;
     background-size: cover;
 }
 
-.service-txt {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-/* services 2 */
-.services2-bg {
+.fixed-image-bg-2 {
     height: 350px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/services/02+.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/fixed-image/02+.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.service-txt {
+.fixed-image-txt {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -316,11 +250,12 @@
 }
 
 
+/*  ===  SERVICES  ===
+******************************************* */
 
-/* contact */
 
-
-/* tim */
+/*  ===  TIM  ===
+******************************************* */
 .section-tim-img {
     gap: 7.2em;
     color: #fff;
@@ -420,9 +355,9 @@
     transform: translateY(0%);
 }
 
-/**************************/
-/* PARTNERS IN SECTION */
-/**************************/
+
+/*  ===  PARTNERS  ===
+******************************************* */
 .section-partners {
     padding: 6em 0 12em 0;
 }
@@ -450,11 +385,11 @@
 }
 
 
-
-/* footer */
+/*  ===  FOOTER  ===
+******************************************* */
 .footer {
     background-color: #121212;
-    padding: 60px 20px;
+    padding: 60px 0 0;
 }
 
 .copyright {

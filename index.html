@@ -19,7 +19,10 @@
     <link rel="stylesheet" href="css/grneral.css" />
     <link rel="stylesheet" href="css/text.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/library.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
@@ -44,8 +47,9 @@
 
         <div id="headerTop" class="flex-space-between-center">
             <div class="headerTopLeft flex">
-                <span><i class="fa-solid fa-phone-volume icon-small"></i>&nbsp;&nbsp;&nbsp;+382 69 555 555</span>
-                <span><i class="fa-regular fa-envelope icon-small"></i>&nbsp;&nbsp;&nbsp;diplingo@dipling.me</span>
+                <span><i class="fa-solid fa-phone-volume icon-small"></i>&nbsp;&nbsp;<a href="tel:+382 69 555 555">+382
+                        69 555 555</a></span>
+                <span><i class="fa-regular fa-envelope icon-small"></i>&nbsp;&nbsp;diplingo@dipling.me</span>
             </div>
             <div class="headerTopRight flex">
                 <a href="#" target="_blank"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
@@ -56,20 +60,17 @@
 
         <div id="headerBottom" class="flex-space-between-center">
             <div id="slogan">
-                <h1 class="slogan-h1">ZAŠTITA I ZDRAVLJE NA RADU</h1>
+                <h1 class="slogan-h1 logo">ZAŠTITA I ZDRAVLJE NA RADU</h1>
+                <img class="none logo-sm" src="img/logo/logo.svg" alt="">
             </div>
 
-            <div class="toggle">
-                <span class="first"></span>
-                <span class="middle"></span>
-                <span class="last"></span>
-            </div>
+            <button class="hamburger">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons ">close</i>
+            </button>
 
             <nav id="nav" class="nav flex">
-
-                <!-- <a href="#" id="respmenu" class="button none"><i
-                        class="fa fa-lg fa-navicon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a> -->
-
                 <a class="third after relative" href="#about">about us</a>
                 <a class="third after relative" href="#">products</a>
                 <a class="third after relative" href="#">references</a>
@@ -79,12 +80,7 @@
         </div>
 
         <!-- SVG-TOP -->
-        <div class="svg-top">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                id="Layer_1" x="0px" y="0px" viewBox="0 0 1920 55" xml:space="preserve">
-                <path d="M1920,5.56c0,0-719.7,49.94-960,49.94S0,5.56,0,5.56V0.5h1920V5.56z" />
-            </svg> -->
-
+        <div class="svg-header">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 id="Layer_1" x="0px" y="0px" viewBox="0 0 1920 55" xml:space="preserve">
                 <polygon points="1920,5.56 960,55.5 0,5.56 0,0.5 1920,0.5 "></polygon>
@@ -94,186 +90,22 @@
     </header>
 
     <!-- dialog box LIBRARY -->
-    <div class="library-btt open-library">
 
-        <!-- <ion-icon class="callUs-close" name="close-outline"></ion-icon> -->
-
-        <!-- <img src="img/library/library.png" alt="OPEN LIBRARY" usemap="#image_map"> -->
-
-        <!--   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
-            x="0px" y="0px" viewBox="0 0 95 76" xml:space="preserve">
-            <g>
-                <path class="st0"
-                    d="M13.64,0.01c13.52,0.02,27.05,0.05,40.57,0.06c2.59,0,5.18-0.04,7.77-0.07c3.89,1,4.66,1.97,4.66,5.92   c0,7.28-0.04,14.57,0.03,21.85c0.01,1.3-0.39,1.85-1.6,2.31c-11.2,4.23-17.66,13.64-17.48,25.57c0.02,1.59-0.74,1.42-1.71,1.42   c-10.52,0-21.05-0.01-31.57,0c-2.49,0-4.31,1.56-4.78,4c-0.4,2.07,0.87,4.29,2.89,5.25c0.81,0.39,1.61,0.3,2.41,0.3   c11.09,0.02,22.19,0.04,33.28-0.03c1.63-0.01,2.61,0.36,3.44,1.88c1.3,2.39,3.08,4.48,5.28,6.16c0.41,0.31,0.99,0.58,1.04,1.37   c-0.89,0-1.76,0-2.62,0c-13.31,0-26.63,0-39.94,0C6.12,76,0.25,70.12,0.25,60.92c0-15.08,0.17-30.16-0.06-45.23   C0.05,7.03,5.69,0.93,12.73,0.28C13.04,0.25,13.34,0.1,13.64,0.01z" />
-                <path class="st0"
-                    d="M95.18,54.89C95.12,66.7,85.55,76.09,73.65,76c-11.83-0.09-21.12-9.61-21.07-21.57   c0.05-11.47,9.57-21.33,22.19-20.99C85.98,33.75,95.23,43.25,95.18,54.89z M77,57.2c-1.23,2.02-2.98,3.22-4.18,4.89   c-0.25,0.35-0.65,0.57-0.54,1.11c0.42,1.99,2.93,2.91,4.46,1.48c2.86-2.69,5.61-5.5,8.37-8.31c0.98-1,1.06-2.21,0.07-3.23   c-2.79-2.86-5.6-5.7-8.48-8.46c-1.24-1.19-2.69-0.84-3.73,0.54c-0.66,0.88-0.69,1.6,0.06,2.4c1.3,1.39,2.56,2.82,4.11,4.53   c-4.21,0-7.94-0.01-11.67,0c-2.28,0.01-3.77,1.02-3.86,2.54c-0.09,1.42,1.52,2.48,3.82,2.49C69.21,57.2,72.98,57.2,77,57.2z" />
-            </g>
-        </svg> -->
-
-        <p>LIBRARY</p>
-    </div>
 
     <!-- library content -->
-    <div class="library translateX-100 library-content full-screen">
-        <div class="library-header">
-            <p class="library-header-close"><ion-icon name="arrow-back-outline"></ion-icon> Back</p>
-            <p class="library-header-heading">Regulativa</p>
-            <p class="library-header-title">Podzakonska akta</p>
-        </div>
-        <div class="doc-accordion">
-            <!-- 1 -->
-            <div class="doc doc1">
-                <!-- <p class="link-pdf link-pdf1">otvori pdf dokument</p> -->
-                <p class="title-pdf">PRAVILNIK O UPOTREBI SREDSTAVA I OPREME LIČNE ZAŠTITE NA RADU</p>
-                <object class="none" data="pdf/Pravilnik-oupotrebisredstavaiopremelicnezastitenaradu135-21.pdf"
-                    width="100%" height="100%">
-                </object>
-            </div>
-            <div class="library-pdf library-pdf1 none full-screen">
-                <p class="library-header-close"><ion-icon name="arrow-back-outline"></ion-icon> Back</p>
-                <object data="pdf/Pravilnik-oupotrebisredstavaiopremelicnezastitenaradu135-21.pdf" width="100%"
-                    height="100%">
-                </object>
-            </div>
-
-            <!-- 2 -->
-            <div class="doc doc2">
-                <!-- <p class="link-pdf link-pdf2">otvori pdf dokument</p> -->
-                <p class="title-pdf">pdf dokument</p>
-                <object class="none" data="pdf/1.pdf" width="100%" height="100%">
-                </object>
-            </div>
-            <div class="library-pdf library-pdf2 none full-screen">
-                <p class="library-header-close"><ion-icon name="arrow-back-outline"></ion-icon> Back</p>
-                <object data="pdf/1.pdf" width="100%" height="100%">
-                </object>
-            </div>
-
-            <!-- 3 -->
-            <div class="doc doc3">
-                <!-- <p class="link-pdf"> otvori pdf dokument</p> -->
-                <p class="title-pdf">pdf dokument</p>
-                <object class="none" data="pdf/2.pdf" width="100%" height="100%">
-                </object>
-            </div>
-
-            <!-- 4 -->
-            <div class="doc doc4">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 5 -->
-            <div class="doc doc5">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 6 -->
-            <div class="doc doc6">
-                <p class="link-pdf"> otvori pdf dokumen</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 7 -->
-            <div class="doc doc7">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 8 -->
-            <div class="doc doc8">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 9 -->
-            <div class="doc doc9">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 10 -->
-            <div class="doc doc10">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 11 -->
-            <div class="doc doc11">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 12 -->
-            <div class="doc doc12">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 13 -->
-            <div class="doc doc13">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 14 -->
-            <div class="doc doc14">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 15 -->
-            <div class="doc doc15">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 16 -->
-            <div class="doc doc16">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 17 -->
-            <div class="doc doc17">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 18 -->
-            <div class="doc doc18">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 19 -->
-            <div class="doc doc19">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-            <!-- 20 -->
-            <div class="doc doc20">
-                <p class="link-pdf">otvori pdf dokument</p>
-                <p class="title-pdf">pdf dokument</p>
-            </div>
-
-        </div>
-    </div> <!-- end dialog box LIBRARY-->
+    <!-- end dialog box LIBRARY-->
 
 
     <!-- HERO ================================== -->
     <section class="section-hero relative grid" id="hero">
         <div class="logo-main">
-            <img class="logo" width="100" height="80" alt="Temolate-2 logo" src="img/logo/logo+.svg" />>
+            <img class="logo" width="100" height="80" alt="Dipling logo - Zaštita i zdravlje na radu"
+                src="img/logo/logo+.svg" />>
         </div>
 
         <svg class="svg-down absolute" width="192" height="61" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 160 50"
             xml:space="preserve">
-            <!-- <path
-                d="M159.91,49.9c-21.76,0-34.19-12.5-45.02-25S95.04,0,80,0S55.83,12.5,45,25S21.84,50,0.08,50  C-4.23,50,164.33,49.9,159.91,49.9z" /> -->
             <path fill="currentColor"
                 d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
             </path>
@@ -282,78 +114,91 @@
         <a class="arrow-down absolute" href="#about"></a>
     </section>
 
+
     <!-- ABOUT ================================== -->
-    <section class="section-about grid col-2 p-60" id="about">
-        <div class="grid col-2 section-about-img">
+    <section class="section-about grid col-2 ptb-90 plr-60" id="about">
+        <div class="grid col-img-2  section-about-img">
             <div class="img-about"><img src="img/about/03.jpg" alt="alt text"></div>
             <div class="img-about"><img src="img/about/02+.jpg" alt="alt text"></div>
             <div class="img-about"><img src="img/about/01.jpg" alt="alt text"></div>
             <div class="img-about"><img src="img/about/04.jpg" alt="alt text"></div>
         </div>
 
-        <div class="section-about-txt">
-            <h2>H2 About text</h2>
-            <h3>H3 About text</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae harum voluptatibus nam praesentium
-                cum, ab quasi illo ipsum itaque optio deserunt voluptatem reiciendis id labore animi accusantium, alias,
-                architecto sed!</p>
+        <div class="section-txt-right mt-60">
+            <!-- <span class="subheading">Zaštita i zdravlje na radu</span> -->
+            <!-- <h2>Zaštita i zdravlje na radu</h2> -->
+            <!-- <h2>bezbjedno i zdravo radno mjesto</h2> -->
+            <h2 class="h2 center-text">Zaštita i zdravlje na radu</h2>
+            <p class="p center-text">Zaštita i zdravlje na radu obezbjeđuje se i sprovodi primjenom savremenih
+                tehničkotehnoloških,
+                organizacionih, zdravstvenih, socijalnih i drugih mjera i sredstava zaštite u skladu sa zakonom,
+                drugim propisima, ratifikovanim i objavljenim međunarodnim ugovorima.</p>
         </div>
     </section>
+
+
+    <!-- FIXED IMAGE 1 ================================== -->
+    <section class="section-fixed-image relative" id="fixed-image">
+        <div class="fixed-image-bg-1"></div>
+        <div class="fixed-image-txt absolute">
+            <h2>H2 About text</h2>
+            <h3>H3 About text</h3>
+        </div>
+    </section>
+
 
     <!-- SEVICES ================================== -->
-    <section class="section-services relative" id="services">
-        <div class="services-bg"></div>
-        <div class="service-txt absolute">
-            <h2>H2 About text</h2>
-            <h3>H3 About text</h3>
-        </div>
-    </section>
-
-    <!-- CONTACT ================================== -->
-    <section class="section-contact grid col-2 p-60" id="contact">
-        <div class="section-contact-txt">
-            <h2>H2 About text</h2>
-            <h3>H3 About text</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae harum voluptatibus nam praesentium
-                cum, ab quasi illo ipsum itaque optio deserunt voluptatem reiciendis id labore animi accusantium, alias,
-                architecto sed!</p>
+    <section class="section-contact grid col-2 ptb-90 plr-60" id="contact">
+        <div class="section-txt-left">
+            <span class="subheading">H2 About text</span>
+            <h2 class="h2 center-text">H3 About text</h2>
+            <p class="p">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum
+                auctor nunc
+                vitae diam
+                eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi
+                finibus, vel tristique risus faucibus. Fusce faucibus nulla at viverra condimentum.</p>
         </div>
 
-        <div class="grid col-2 section-about-img">
+        <div class="grid col-img-2  section-about-img">
             <div class="img-about"><img src="img/work/01.jpg" alt="alt text"></div>
             <div class="img-about"><img src="img/work/02.jpg" alt=" alt text"></div>
         </div>
     </section>
 
-    <!-- SEVICES ================================== -->
-    <section class="section-services relative" id="services">
-        <div class="services2-bg"></div>
-        <div class="service-txt absolute">
+
+    <!-- FIXED IMAGE 2 ================================== -->
+    <section class="section-fixed-image relative" id="fixed-image">
+        <div class="fixed-image-bg-2"></div>
+        <div class="fixed-image-txt absolute">
             <h2>H2 About text</h2>
             <h3>H3 About text</h3>
         </div>
     </section>
 
+
     <!-- CONTACT ================================== -->
-    <section class="section-contact grid col-2 p-60" id="contact">
-        <div class="grid col-2 section-about-img">
+    <section class="section-contact grid col-2 ptb-90 plr-60" id="contact">
+        <div class="grid col-img-2 section-about-img">
             <div class="img-about"><img src="img/work/03.jpg" alt="alt text"></div>
             <div class="img-about"><img src="img/work/04.jpg" alt=" alt text"></div>
         </div>
 
-        <div class="section-about-txt">
-            <h2>H2 About text</h2>
-            <h3>H3 About text</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae harum voluptatibus nam praesentium
+        <div class="section-txt-right">
+            <span class="subheading">H2 About text</span>
+            <h2 class="h2 center-text">H3 About text</h2>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae harum
+                voluptatibus nam
+                praesentium
                 cum, ab quasi illo ipsum itaque optio deserunt voluptatem reiciendis id labore animi accusantium, alias,
                 architecto sed!</p>
         </div>
     </section>
 
+
     <!-- TIM ================================== -->
     <section class="section-tim grid plbr-60" id="tim">
         <div class="section-tim-txt">
-            <h2>H2 About text</h2>
+            <h2 class="h2 center-text">Our tim</h2>
         </div>
 
         <div class="grid col-3 section-tim-img container ">
@@ -417,6 +262,7 @@
         </div>
     </section>
 
+
     <!-- PARTNERS ================================== -->
     <section class="section-partners">
         <div class="">
@@ -431,25 +277,24 @@
         </div>
     </section>
 
+
     <!-- FOOTER ================================== -->
     <footer class="footer relative" id="footer">
+        <div class="copyright relative">
+            <svg class="svg-up absolute" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
+                <path fill="#262526"
+                    d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
+                </path>
+            </svg>
+            <a class="scroll-top" href="#"><i class="fas fa-angle-double-up arrow-up"></i></a>
 
+            <ul class="CTA flex">
+                <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
+                <li><a href="#">CONTACT THE DIPLING</a></li>
+            </ul>
+        </div>
     </footer>
-    <div class="copyright relative">
-        <svg class="svg-up absolute" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
-            y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xml:space="preserve">
-            <path fill="#262526"
-                d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z">
-            </path>
-        </svg>
-        <a class="scroll-top" href="#"><i class="fas fa-angle-double-up arrow-up"></i></a>
-
-        <ul class="CTA flex">
-            <li><a href="#">PERMISSIONS AND COPYRIGHT</a></li>
-            <li><a href="#">CONTACT THE DIPLING</a></li>
-        </ul>
-    </div>
-
 
     <script src="js/script.js"></script>
 </body>
