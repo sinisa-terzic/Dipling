@@ -389,7 +389,12 @@
 ******************************************* */
 .footer {
     background-color: #121212;
-    padding: 60px 0 0;
+    /* padding: 60px 0 0; */
+}
+
+.contact {
+    gap: 15rem;
+    padding: 6rem 0;
 }
 
 .copyright {
