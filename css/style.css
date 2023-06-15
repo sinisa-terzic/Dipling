@@ -261,6 +261,12 @@
     background: url(../img/border/border_diagonal.png) repeat-x 0 0;
 }
 
+.document-icon {
+    font-size: 3.2em;
+    float: left;
+    padding-right: 1rem;
+}
+
 
 /*  ===  TIM  ===
 ******************************************* */

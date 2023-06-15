@@ -91,6 +91,12 @@ h3 {
   color: #385a8a;
 }
 
+.h3-border {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid;
+  margin-bottom: 2rem;
+}
+
 .h3-sm {
   font-size: 2rem;
   letter-spacing: 0;
