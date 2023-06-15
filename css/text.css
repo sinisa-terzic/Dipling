@@ -86,7 +86,9 @@ h3 {
 }
 
 .h3 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #385a8a;
 }
 
 .h3-sm {
