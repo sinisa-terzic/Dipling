@@ -25,6 +25,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.col-2--25-75 {
+  grid-template-columns: 25% 75%;
+}
+
 .col-2--40-60 {
   grid-template-columns: 35vw 65vw;
 }
@@ -67,6 +71,10 @@
 .flex-center {
   display: flex;
   align-items: center;
+}
+
+.flex-align-center {
+  align-self: center;
 }
 
 .flex-justify-center {

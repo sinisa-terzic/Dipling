@@ -46,16 +46,25 @@ h3 {
 }
 
 .h2 {
-  background-color: #385a8a;
+  font-size: 3.2rem;
+  margin-bottom: 4.6rem;
+  line-height: 1.2;
+  position: relative;
+  font-weight: 700;
+}
+
+.h2-b {
+  background-color: #254267;
   color: #fff;
   font-size: 2.7rem;
-  font-weight: 500;
+  font-weight: 700;
   padding: 1.5rem 2rem;
   margin-bottom: 2rem;
   /* font-family: 'Nunito Sans', sans-serif; */
+  clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 5% 100%, 0% 50%);
 }
 
-/* .h2::after {
+.h2::after {
   display: block;
   background: url(../img/dots/dots.svg) repeat-x 0 0/10px 3px;
   content: "";
@@ -65,9 +74,9 @@ h3 {
   bottom: -15px;
   transform: translateX(-50%);
   width: 100%;
-} */
+}
 
-/* .h2::before {
+.h2::before {
   display: block;
   background: url(../img/dots/dots.svg) repeat-x 0 0/10px 3px;
   content: "";
@@ -77,7 +86,17 @@ h3 {
   top: -15px;
   transform: translateX(-50%);
   width: 100%;
-} */
+}
+
+
+.h2-a {
+  color: #FFF;
+  font-size: 2.7rem;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline;
+}
 
 .h3-lg {
   font-size: 3.1rem;
@@ -102,6 +121,55 @@ h3 {
   letter-spacing: 0;
 }
 
+/* .heading, .article-title */
+.heading {
+  /* font-family: TTSupermolotNeue; */
+  position: relative;
+  font-size: 2.7rem;
+  line-height: 4rem;
+  font-weight: 400;
+  letter-spacing: -0.01579em;
+  margin-top: 0;
+  margin-bottom: 4.6rem
+}
+
+.heading::after {
+  display: block;
+  background: url(../img/dots/dots.svg) repeat-x 0 0/10px 3px;
+  content: "";
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  bottom: -15px;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.heading::before {
+  display: block;
+  background: url(../img/dots/dots.svg) repeat-x 0 0/10px 3px;
+  content: "";
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  top: -15px;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .heading {
+    font-size: calc(0.83333vw + 26px);
+    line-height: calc(0.41667vw + 36px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading {
+    font-size: calc(0.625vw + 2.7rem);
+    line-height: calc(1.45833vw + 21px);
+  }
+}
 
 /*  ===  subheading  ===  */
 .subheading {
@@ -122,6 +190,33 @@ h3 {
   padding-bottom: 4.5rem;
 }
 
+.p-a {
+  color: #667375;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.28em;
+  letter-spacing: -0.00588em;
+  margin-top: 0;
+  margin-bottom: 1.764em;
+  font-size: 1.6rem;
+  line-height: 1.48em;
+}
+
+@media (min-width: 480px) {
+  .p-a {
+    font-size: calc(0.3125vw + 12.5px);
+    line-height: calc(0.41667vw + 16px);
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .p-a {
+    font-size: calc(0.83333vw + 5px);
+    line-height: calc(1.66667vw - 2px);
+  }
+}
+
 .p-sm {
   font-size: 1.1rem;
 }
@@ -129,6 +224,10 @@ h3 {
 /*  ===  text style  ===  */
 .center-text {
   text-align: center;
+}
+
+.right-text {
+  text-align: right;
 }
 
 .strong {

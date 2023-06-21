@@ -159,6 +159,8 @@
     height: calc(100vh - 22px);
     padding-top: 150px;
     background-color: #dce4ef;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../img/fixed-image/3-a.jpg) fixed center;
+    background-size: cover;
 }
 
 #hero .svg-down {
@@ -212,6 +214,11 @@
     border-radius: 20px; */
 }
 
+
+/*  ===  ABOUT - 1 ===
+******************************************* */
+
+
 /*  ===  ABOUT  ===
 ******************************************* */
 /*.section-about {
@@ -222,11 +229,44 @@
     gap: 2em;
 }
 
+.labeled {
+    border-top: 2px solid #254267;
+    padding-top: 20px;
+    margin-top: 41px;
+    position: relative;
+}
+
+.labeled .spacecom-label {
+    background-color: #254267;
+    color: #FFF;
+    padding: 0 15px 0 5px;
+    line-height: 40px;
+    position: absolute;
+    top: -41px;
+    right: 0;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+    height: 40px;
+}
+
+.labeled .spacecom-label::before {
+    content: "";
+    display: block;
+    border: 20px solid transparent;
+    border-bottom-color: #254267;
+    border-right-color: #254267;
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+
 /*  ===  FIXED IMAGE & TEXT  ===
 ******************************************* */
 .fixed-image-bg-1 {
     height: 350px;
-    background: url(../img/fixed-image/1.jpg) fixed center;
+    background: url(../img/fixed-image/4-b.jpg) fixed center;
     background-size: cover;
 }
 
@@ -258,7 +298,7 @@
 .servis {
     padding-top: 25px;
     border: 0;
-    background: url(../img/border/border-1.png) repeat-x 0 0;
+    background: url(../img/border/border.png) repeat-x 0 0;
 }
 
 .document-icon {
