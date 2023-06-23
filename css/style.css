@@ -129,8 +129,7 @@
     top: 0;
     left: 12px;
     right: 12px;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.98);
     color: #112e51;
     transition: 0.3s all ease;
     box-shadow: 0 2em 4em rgba(0, 0, 0, 0.03);
@@ -144,12 +143,8 @@
 
 #headerBottom.sticky .nav a:link,
 #headerBottom.sticky .nav a:visited {
-    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid #fff;
     color: #112e51;
-}
-
-#headerBottom.sticky .nav a:hover {
-    background-color: transparent;
 }
 
 #headerBottom.sticky .hamburger {
@@ -271,7 +266,7 @@
 ******************************************* */
 .fixed-image-bg-1 {
     height: 350px;
-    background: url(../img/fixed-image/4-b.jpg) fixed center;
+    background: url(../img/fixed-image/4-a.jpg) fixed center;
     background-size: cover;
 }
 
